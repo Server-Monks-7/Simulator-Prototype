@@ -1,0 +1,80 @@
+Assembler Construction Code README
+Project Title
+	Assembler Construction in C++
+
+Description
+	This project provides a simple assembler construction code written in C++ to translate assembly code into machine code.
+
+C++ code description
+		
+	We first included a number of header files necessary for handling input/output, working with maps and unordered maps, using 	regular expressions and dealing with strings and file operations.
+	We then proceeded to create two classes, the first of which is the output class which provides an interface for writing data to an 	output file. It opens the file in append mode during construction and closes it during destruction.
+	The second and main class is the assembler class which encapsulates the functionality of an actual assembler. The class includes 	maps for opcodes and register mappings. To provide a final machine code from an instruction in assembly, the class employs 	functions such as ‘stringtobinary’, ‘parseassemblyline’, ‘instructionhandle’ and finally ‘filetranslatetomachine’.
+	The ‘instructionmapping’ stores opcode mappings for different assembly instructions and the ‘registermapping’ stores binary 	mappings for different registers.
+	‘stringtobinary’ function simply converts the given string parameter to its binary representation.
+	The ‘parseassemblyline’ function examines each line of assembly code and determines the type of operation involved.
+	The ‘instructionhandle’ function further handles lines with instructions by breaking them down into separate components.
+	The ‘filetranslatetomachine’ function then reads the assembly code from a file line by line and processes each line using the 	aforementioned ‘parseassemblyline’ function.
+
+
+Installation
+	Ensure you have a C++ compiler installed. Clone the repository and compile the code using the following command:
+
+		g++ -o assembler assembler.cpp
+
+Usage
+	Run the compiled executable with the assembly file as an argument to generate machine code:
+
+		./assembler input.asm
+
+File Structure
+	assembler.cpp: Main source code file.
+	input.asm: Sample assembly code input file.
+	machinecode.bin: Output file for the generated machine code.
+
+Dependencies
+	The project relies on the C++ standard library.
+
+Building from Source
+	Compile the code using a C++ compiler. No additional build steps are required.
+
+Contributing
+	Feel free to contribute by submitting bug reports or feature requests. Follow standard GitHub practices for pull requests.
+
+Testing
+	No specific testing framework is used. Run the code with sample assembly files to verify correct functionality.
+
+Known Issues
+	No handling for certain assembly instructions.
+	Limited error handling and reporting.
+
+Contact Information
+For inquiries or issues, contact the project maintainer:
+
+	Maintainer: [Rebokile Sello_Server Monks]
+	Email: [rebokiles35@gmail.com]
+
+Release Notes
+v1.0.0 (January 2024): Basic functionality for supported instructions.
+
+Acknowledgments
+The project uses standard C++ libraries.
+
+Feel free to contribute and improve this assembler construction code!
+
+SERVER MONKS 2024
+
+Rebokile Sello	        202100402
+Mosiuoa Sello		202100003
+Tlotliso Maboee		202100103
+Katleho Seutloali	202100016
+Bahlakoana Sehloho	202101677
+Relebohile Konyana	202101740
+Rets`elisitsoe Melato	202100117
+
+
+
+
+
+
+

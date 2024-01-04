@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIPs 32 Web Based Simulator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #3f9fdf;
+            color: #000; 
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            resize: vertical;
+            color: #000; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MIPs 32 Web Based Simulator</h1>
+
+    <form action="process-comment.php" method="post">
+        <label for="comment">Assemble:</label>
+        <textarea id="comment" name="comment" placeholder="Enter Assembly Code..." required></textarea>
+
+        <br>
+
+        
+        <button type="submit">Assemble</button>
+
+        <br>
+
+        <label for="comment2">Machine Code:</label>
+        <textarea id="comment2" name="comment2" placeholder="Machine Code will be displayed here..." readonly></textarea>
+    </form>
+
+</body>
+</html>
